@@ -41,7 +41,7 @@
     // style URL
     style: 'mapbox://styles/mapbox/light-v9',
     // initial position in [long, lat] format
-    center: [-77.034084142948, 38.909671288923],
+    center: [-82.6902312, 27.838749],
     // initial zoom
     zoom: 13,
     scrollZoom: false
@@ -50,47 +50,88 @@
 	var stores = {
 	    "type": "FeatureCollection",
 	    "features": [
-	      {
-	        "type": "Feature",
-	        "geometry": {
-	          "type": "Point",
-	          "coordinates": [
-	            -77.034084142948,
-	            38.909671288923
-	          ]
-	        },
-	        "properties": {
-	        	"name":"Applebee's",
-				"phoneFormatted": "Located as an outparcel at Parkside Mall, this location has a shaded dining area.  While it's view of busy Park Blvd can bring quite a bit of traffic noise, it is the only restaurant in the area that offers table service in the dog friendly seating area.",
-				"phone": "2022347336",
-				"address": "4000 Park Blvd N",
-				"city": "Pinellas Park",
-				"country": "United States",
-				"crossStreet": "at 15th St NW",
-				"postalCode": "33781",
-				"state": "FL"
-	        }
-	      },
-	      {
-	        "type": "Feature",
-	        "geometry": {
-	          "type": "Point",
-	          "coordinates": [
-	            -77.049766,
-	            38.900772
-	          ]
-	        },
-	        "properties": {
-	        	"name":"Five Guy's Burgers",
-				"phoneFormatted": "This quick service burger restaurant is known for their fresh burgers and HUGE servings of french fries.  The location has several shaded tables outside.  Located near the end of the mall this location has less walking traffic.  Added bonus, this location is just a few doors down from Petco!",
-				"phone": "2025078357",
-				"address": "7054 US Hwy 19 N",
-				"city": "Pinellas Park",
-				"country": "United States",
-				"postalCode": "33781",
-				"state": "FL"
-	        }
-	      }]
+			{
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [
+				    -82.6902312, 
+				    27.838749
+				  ]
+				},
+				"properties": {
+					"name":"Applebee's",
+					"phoneFormatted": "Located as an outparcel at Parkside Mall, this location has a shaded dining area.  While it's view of busy Park Blvd can bring quite a bit of traffic noise, it is the only restaurant in the area that offers table service in the dog friendly seating area.",
+					"phone": "2022347336",
+					"address": "4000 Park Blvd N",
+					"city": "Pinellas Park",
+					"country": "United States",
+					"crossStreet": "at 15th St NW",
+					"postalCode": "33781",
+					"state": "FL"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [
+				    -82.6841879,
+				    27.836621
+				  ]
+				},
+				"properties": {
+					"name":"Five Guy's Burgers",
+					"phoneFormatted": "This quick service burger restaurant is known for their fresh burgers and HUGE servings of french fries.  The location has several shaded tables outside.  Located near the end of the mall this location has less walking traffic.  Added bonus, this location is just a few doors down from Petco!",
+					"phone": "2025078357",
+					"address": "7054 US Hwy 19 N",
+					"city": "Pinellas Park",
+					"country": "United States",
+					"postalCode": "33781",
+					"state": "FL"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [
+				  	-82.6861823,
+				  	27.8387165
+				  ]
+				},
+				"properties": {
+					"name":"Panera Bread",
+					"phoneFormatted": "Known for their fresh bread and gourmet salad and sandwhich offerings, this location can be a fun place to visit with your dog.  Located in an outparcel of the mall, this location has several outdoor tables to choose from and surrounding trees help cut down the traffic noise.",
+					"phone": "2025078357",
+					"address": "7380 US Hwy 19 N",
+					"city": "Pinellas Park",
+					"country": "United States",
+					"postalCode": "33781",
+					"state": "FL"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [
+				    -82.6841879,
+				    27.836621
+				  ]
+				},
+				"properties": {
+					"name":"Five Guy's Burgers",
+					"phoneFormatted": "Your favorite caffeinated beverage and a \"Puppicino\" for your dog can be found at this location of the coffee giant.  Located in an outparcel of the mall, this location offers shadded outdoor seating that still gives you great wi-fi. You can purchase your items in the drive thru, find a parking spot, and then find a spot in their outdoor seating.",
+					"phone": "2025078357",
+					"address": "7054 US Hwy 19 N",
+					"city": "Pinellas Park",
+					"country": "United States",
+					"postalCode": "33781",
+					"state": "FL"
+				}
+			}
+		]
 	};
   // This adds the data to the map
   map.on('load', function (e) {
