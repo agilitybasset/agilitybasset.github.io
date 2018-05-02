@@ -60,14 +60,15 @@
 	          ]
 	        },
 	        "properties": {
-	          "phoneFormatted": "Located as an outparcel at Parkside Mall, this location has a shaded dining area.  While it's view of busy Park Blvd can bring quite a bit of traffic noise, it is the only restaurant in the area that offers table service in the dog friendly seating area.",
-	          "phone": "2022347336",
-	          "address": "1471 P St NW",
-	          "city": "Washington DC",
-	          "country": "United States",
-	          "crossStreet": "at 15th St NW",
-	          "postalCode": "20005",
-	          "state": "D.C."
+	        	"name":"Applebee's",
+				"phoneFormatted": "Located as an outparcel at Parkside Mall, this location has a shaded dining area.  While it's view of busy Park Blvd can bring quite a bit of traffic noise, it is the only restaurant in the area that offers table service in the dog friendly seating area.",
+				"phone": "2022347336",
+				"address": "4000 Park Blvd N",
+				"city": "Pinellas Park",
+				"country": "United States",
+				"crossStreet": "at 15th St NW",
+				"postalCode": "33781",
+				"state": "FL"
 	        }
 	      },
 	      {
@@ -80,14 +81,14 @@
 	          ]
 	        },
 	        "properties": {
-	          "phoneFormatted": "Located as an outparcel at Parkside Mall, this location has a shaded dining area.  While it's view of busy Park Blvd can bring quite a bit of traffic noise, it is the only restaurant in the area that offers table service in the dog friendly seating area.",
-	          "phone": "2025078357",
-	          "address": "2221 I St NW",
-	          "city": "Washington DC",
-	          "country": "United States",
-	          "crossStreet": "at 22nd St NW",
-	          "postalCode": "20037",
-	          "state": "D.C."
+	        	"name":"Five Guy's Burgers",
+				"phoneFormatted": "This quick service burger restaurant is known for their fresh burgers and HUGE servings of french fries.  The location has several shaded tables outside.  Located near the end of the mall this location has less walking traffic.  Added bonus, this location is just a few doors down from Petco!",
+				"phone": "2025078357",
+				"address": "7054 US Hwy 19 N",
+				"city": "Pinellas Park",
+				"country": "United States",
+				"postalCode": "33781",
+				"state": "FL"
 	        }
 	      }]
 	};
@@ -151,7 +152,7 @@
 
     var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
-          .setHTML('<h3>Sweetgreen</h3>' +
+          .setHTML('<h3>Location</h3>' +
             '<h4>' + currentFeature.properties.address + '</h4>')
           .addTo(map);
   }
@@ -171,7 +172,7 @@
       link.href = '#';
       link.className = 'title';
       link.dataPosition = i;
-      link.innerHTML = prop.address;
+      link.innerHTML = prop.name;
 
       var details = listing.appendChild(document.createElement('div'));
       details.innerHTML = prop.phoneFormatted;
