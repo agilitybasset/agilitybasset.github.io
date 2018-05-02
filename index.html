@@ -2,8 +2,23 @@
 <html>
 <head>
 	<title>Agility Basset</title>
+
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
-Testing
+
+	Testing
+
+
+	<div id='map' style='width: 400px; height: 300px;'></div>
+	<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoiYWdpbGl0eWJhc3NldCIsImEiOiJjamdvamR1dzcwMWd3MndzMGl1b2R2aDN6In0.AeCtXVIMddn74IYcWK_KVg';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v10'
+		});
+	</script>
+	
 </body>
 </html>
