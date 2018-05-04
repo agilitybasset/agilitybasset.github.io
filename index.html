@@ -130,6 +130,26 @@
 					"postalCode": "33781",
 					"state": "FL"
 				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+				  "type": "Point",
+				  "coordinates": [
+				    -82.686216,
+				    27.8378011
+				  ]
+				},
+				"properties": {
+					"name":"Home Depot",
+					"phoneFormatted": "Your typical big home improvement store, this location is a great way to expose your dogs to some unusual sights and sounds for the first time.  Start in the outdoor garden area and if they are relaxed, enter through the automatic doors into the store.  This stores layout is especially helpful as it gets gradually louder as you progress from Garden to Lumber.  Watch your dog, use treats & encouragement as necessary, and stop while still in their comfort zones.  Some dogs love the store their first time in while others take several visits to climate.",
+					"phone": "2025078357",
+					"address": "4040 Park Blvd N.",
+					"city": "Pinellas Park",
+					"country": "United States",
+					"postalCode": "33781",
+					"state": "FL"
+				}
 			}
 		]
 	};
@@ -194,7 +214,7 @@
     var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
           .setHTML('<h3>Location</h3>' +
-            '<h4>' + currentFeature.properties.address + '</h4>')
+            '<h4>' + currentFeature.properties.name + ': ' + currentFeature.properties.address + '</h4>')
           .addTo(map);
   }
 
